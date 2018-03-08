@@ -6,6 +6,8 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:hmcts/cmc-supported-browsers.git"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
-
