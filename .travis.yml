@@ -1,0 +1,13 @@
+language: node_js
+cache: yarn
+script:
+- yarn --version
+deploy:
+  provider: npm
+  email: jenkins-reform@hmcts.net
+  api_key:
+    secure: k6re3X9OIKfLnEOx8Ia7hcnN/0aLc4yvfP3GvvSeacCbvZUzQGMGyoU8BqRhAmKYKWYynx0YtqH+RFJA+y6jOhrNEVfZTcaD24pBlF5vbVMsZoUWgPH1Rh1rpc1h+miQkc+Kxx03Ik5JDHpvnKtX8Eser+jdLRR/Kv/97A303+5i/M4l2DatzSP6C6CVosyafuedaA3FaNDPBViCTfyxe3opeDdUroK+vyMtSzio48ycZcHp1XL5kkUptgEso4L7keqxej0djaU/FxFOzyUDokEfs/x1noJMl4QCErbV72SvXQvbigN9+vn98earDkUiDKBFg7JCFyxnl3SdNIfuc4wFy0GONnjRcbzdTXwDs49cChHBpmbcn7g82n5sK/KbIo2qwScS1IQiKYwv5RzDqtjmCZv/1HzmqalkC496ZSJpNTz8gbknCgGoEk4x/Z37yWuSPz0phRNHInVwdAehFkYqZDrewsLoQ56bTVpUa+GDZVmZ1orG8//eMMU+8ZaUsr/XuwrQRXR/1H5/RnvZZG+jAM+aZUoErbhXsQimrb1qlY9EMvjR5Ytxz7Keca3fVI/QLckPNCxWgIWcYBXOKREKZxK3Q07msv50CI06Zew4G9CF53MbCOCuIk4+HMA2TVghNvSOO4SOWvFm2E3u9kzH6dSKv4G/5fdAtdbKhrI=
+  on:
+    tags: true
+    repo: hmcts/cmc-supported-browsers
+
